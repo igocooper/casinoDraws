@@ -71,6 +71,54 @@ body {
     vertical-align: middle;
 }
 
+.tip {
+    width: 50px;
+    height:50px;
+
+    position: absolute;
+    top: 11px;
+    right: 175px;
+
+    cursor: pointer;
+}
+
+.tip:hover p {
+    opacity: 1;
+    transition: opacity .8s;
+}
+
+.tip p {
+
+    transition: opacity .8s;
+    opacity: 0;
+
+    font-size: 14px;
+
+    width: 220px;
+    background: #333 ;
+    border-radius: 15px;
+
+    padding: 20px 10px;
+
+    position: absolute;
+    left: -97px;
+    top: 50px;
+}
+
+.tip p:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width:20px;
+    height:20px;
+    background: #333 ;
+
+    transform: rotate(45deg) translateX(-50%);
+
+}
+
 .btn {
     outline: none;
     border: none;

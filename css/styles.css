@@ -1,0 +1,128 @@
+body {
+    background: #46342e;
+    color: white;
+    text-align: center;
+    font-family: "Dosis", "Helvetica Neue",  sans-serif;
+}
+
+.wrapper {
+    width: 1100px;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container {
+    width: 1068px;
+    height: 640px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background: url('../img/bg.jpg') top center no-repeat;
+}
+
+.header {
+    border: 1px solid #46342e;
+    border-radius: 12px;
+    background: #58abca;
+    width: 35%;
+    margin: 0 auto;
+    line-height: 79px;
+    text-align: center;
+}
+
+.header h2 {
+    font-size: 16px;
+}
+
+.result {
+    background: rgba(0, 0,0 , 0.9);
+    display: none;
+
+    position: absolute;
+    top: 47.4%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+    width:225px;
+    height: 225px;
+
+    opacity: 0;
+
+    transition: opacity .8s;
+}
+
+.result span.text-small {
+    font-size: 18px;
+}
+
+.result p {
+    font-size: 78px;
+    text-align: center;
+    line-height:24px;
+
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.btn {
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    background: #ffe16d;
+
+    cursor: pointer;
+
+    min-width: 80px;
+    line-height: 20px;
+
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+
+    box-shadow: 1px 1px 5px #333;
+    text-shadow:  1px 1px #333333;
+}
+
+.btn:hover{
+    background: #fbdd6c;
+}
+.menu {
+    background: rgba(79, 173, 212, 0.8);
+    /*background: rgba(108, 201, 1, 0.8);*/
+    border: 2px solid #46342e;
+    border-radius: 12px;
+
+    position: absolute;
+    bottom:0;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+    width: 380px;
+    min-height: 160px;
+    font-size: 16px;
+}
+
+.menu .btn {
+    margin-top: 10px;
+}
+
+.menu input {
+    outline: none;
+    text-align: center;
+    width: 30px;
+    border: none;
+    border-radius: 15px;
+}
+
+.menu p {
+    margin-top: 20px;
+}
